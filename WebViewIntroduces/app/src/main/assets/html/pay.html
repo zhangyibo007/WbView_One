@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"
+          name="viewport"/>
+    <title>购买计划</title>
+    <link href="images/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+
+<body class="mbg1">
+
+
+<div class="paybox">
+    <div class="payname">
+        <span class="tit">德玛西亚之翼</span>
+        <span class="num">28欧</span>
+    </div>
+</div>
+<div class="paybox pay2box">应付:<span class="cr">28欧</span></div>
+<div class="paybox payimg">
+    <div class="payname">
+        <span class="tit"><i><img src="images/wx_ico.png"></i>微信支付</span>
+        <span class="choice cho2ice"><img src="images/xz_ico.png" class="no_ch"><img
+                src="images/xz2_ico.png" class="ok_ch"></span> <!--选择class 加 cho2ice-->
+    </div>
+    <div class="payname">
+        <span class="tit"><i><img src="images/zfb_ico.png"></i>支付宝支付</span>
+        <span class="choice"><img src="images/xz_ico.png" class="no_ch"><img
+                src="images/xz2_ico.png" class="ok_ch"></span> <!--选择class 加 cho2ice-->
+    </div>
+</div>
+<span class="prompt">充值后不可退回，请您谨慎操作</span>
+<span class="payment"><a href="#">确认支付</a></span>
+<script>
+
+    $(function(){
+      $('.payment').click(function(){
+            window.test.GETNAME();
+        });
+
+
+
+    });
+     function settitle(prices){
+        alert("即将要修改价格了");
+          $('.num ,.cr').text(prices);
+        }
+
+</script>
+</body>
+</html>
